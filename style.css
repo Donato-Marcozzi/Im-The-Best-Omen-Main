@@ -4,6 +4,11 @@
 	margin: 0;
 	padding: 0;
 }
+
+:root {
+	--scale-val: 1.05;
+}
+
 body {
 	background-image: url("https://media.tenor.com/McJsfXrhrT0AAAAC/omen-valorant.gif");
 	background-size: cover;
@@ -33,7 +38,7 @@ body {
 }
 .hover-box:hover {
 	box-shadow: 6px 6px 20px 5px black;
-	transform: scale(1.08);
+	transform: scale(var(--scale-val));
 }
 
 #omen-gif {
@@ -87,7 +92,7 @@ ul li {
 }
 
 ul li:hover {
-	transform: scale(1.1);
+	transform: scale(var(--scale-val));
 }
 
 footer {
