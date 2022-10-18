@@ -1,37 +1,99 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 body {
+	background-image: url("https://media.tenor.com/McJsfXrhrT0AAAAC/omen-valorant.gif");
+	background-size: cover;
+	backdrop-filter: blur(10px);
 	background-color: #71679a;
-	overflow: hidden;
+	overflow: scroll;
+}
+.transition { 
+	transition: all 0.3s;  
 }
 
-img {
-	border-radius: 50px;
-	filter: blur(10px);
+.title_bar {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	place-items:center;
+	justify-items: center;
+	}
+.title_bar * {
+	margin: 2% auto;
+
 }
 
-#imageDiv {
-	position:relative;
-	right:0.15%;
-	
-	width:1890px; 
-	height:900px;
-	background-color: #ff4655;
+.hover-box {
+	box-shadow: 10px 10px 10px black;
+	border-radius: 10px; 
+}
+.hover-box:hover {
+	box-shadow: 6px 6px 25px black;
+	transform: scale(1.08);
+}
+
+#omen-gif {
+	background-image: url(https://thumbs.gfycat.com/AmbitiousCrazyGraywolf-size_restricted.gif);
+	width: 350px; 
+	height: 200px;
+	BACKGROUND-SIZE: CONTAIN;
+}
+
+#videoDiv {
 	border: 10px solid black;
-	border-radius: 50px;
-	transition: 0.3s;
+	border-radius: 55px;
+	width: 98%;
+	margin: 2% auto;
 }
-#imageDiv:hover {
+#vdieoDiv img {
 	position:relative;
 	right:0.15%;
 	
-	width:1890px; 
-	height:900px;
-	background-color: #2b2b65;
-	border: 10px solid #2b2b65;
+	z-index: -1;
+	filter: blur(10px);
+	
+	width: 100%;
+	background-color: #ff4655;
 	border-radius: 50px;
 }
-
-
+#videoDiv img:hover {
+	background-color: #2b2b65;
+	border-color: #2b2b65;
+}
 h1 {
+	color: #878f99; 
+	text-shadow: 4px 4px 5px black;
 	text-align: center;
 	margin-bottom: 0.5%;
+	font-family: 'Libre Baskerville', serif; text-align:center;
+}
+ul {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	font-size: 2rem; 
+	padding: 0rem 1rem; 
+	background-color: #6b5b95;
+}	
+
+ul li {
+	text-align: center;
+}
+
+ul li:hover {
+	transform: scale(1.1);
+}
+
+footer {
+		color: #878f99; 
+		text-shadow: 4px 4px 5px black;
+}	
+a { 
+	 text-decoration: none;
 }
