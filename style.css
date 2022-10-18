@@ -32,7 +32,7 @@ body {
 	border-radius: 10px; 
 }
 .hover-box:hover {
-	box-shadow: 6px 6px 25px black;
+	box-shadow: 6px 6px 20px 5px black;
 	transform: scale(1.08);
 }
 
